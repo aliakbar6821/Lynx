@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/system_background_dark">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,84 +10,71 @@
         android:padding="28dp"
         android:gravity="center_horizontal">
 
-        <!-- Header -->
         <TextView
-            android:text="🐾 Lynx"
-            android:textSize="32sp"
+            android:text="Lynx Spoofer"
+            android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="@android:color/system_accent1_200"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="Spoofer Control"
-            android:textSize="14sp"
-            android:textColor="@android:color/system_neutral1_400"
-            android:layout_marginBottom="36dp"
+            android:text="Settings.Secure spoof control"
+            android:textSize="13sp"
+            android:layout_marginBottom="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- Keybox -->
         <Button
             android:id="@+id/btnKeybox"
-            android:text="📄  Select Keybox XML"
+            android:text="Select Keybox XML"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginBottom="12dp"
-            style="@style/Widget.Material3.Button.OutlinedButton"/>
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvKeyboxStatus"
             android:text="No keybox loaded"
             android:textSize="12sp"
-            android:textColor="@android:color/system_neutral1_500"
             android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- PIF -->
         <Button
             android:id="@+id/btnPif"
-            android:text="📋  Select pif.json"
+            android:text="Select pif.json"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginBottom="12dp"
-            style="@style/Widget.Material3.Button.OutlinedButton"/>
+            android:layout_marginBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvPifStatus"
             android:text="No pif.json loaded"
             android:textSize="12sp"
-            android:textColor="@android:color/system_neutral1_500"
             android:layout_marginBottom="32dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <!-- Reset -->
         <Button
             android:id="@+id/btnReset"
-            android:text="🗑  Reset Spoofing"
+            android:text="Reset Spoofing"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#B71C1C"/>
 
-        <!-- Integrity -->
         <Button
             android:id="@+id/btnIntegrity"
-            android:text="✅  Check Integrity"
+            android:text="Check Integrity"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:backgroundTint="#1B5E20"/>
 
-        <!-- Log area -->
         <TextView
             android:id="@+id/tvLog"
             android:text=""
             android:textSize="13sp"
             android:fontFamily="monospace"
-            android:textColor="@android:color/system_accent2_100"
             android:layout_marginTop="28dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

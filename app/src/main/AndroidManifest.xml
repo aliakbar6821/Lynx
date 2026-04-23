@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Granted via privapp-permissions whitelist, not runtime -->
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
-
-    <!-- Android 13+ scoped storage for file picker -->
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:label="Lynx"
-        android:icon="@mipmap/ic_launcher"
-        android:theme="@style/Theme.Material3.DayNight"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:theme="@android:style/Theme.Material.DayNight"
         android:allowBackup="false"
         android:supportsRtl="true">
 
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
